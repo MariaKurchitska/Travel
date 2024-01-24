@@ -1,0 +1,117 @@
+.contacts{
+    display: flex;
+    background: linear-gradient(130deg, #FF7B4E 15.57%, #FF584E 95.03%);
+}
+.container{
+    padding: 10px;
+}
+.screen{
+    position: relative;
+    margin: 40px 0 40px 0;
+    background: #323A3D;
+    border-radius: 15px;
+    &__header{
+        display: grid;
+        grid-template-columns: 40px 20px;
+        justify-content: space-between;
+        background:#4d4d4f;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding: 10px 20px;
+        &-left{
+           display: flex;
+           justify-content: space-between;
+        }
+        &-close{
+            width: 8px;
+            height: 8px;
+            background: #FF7B4E;
+            border-radius: 50px;
+        }
+        &-maximize{
+            width: 8px;
+            height: 8px;
+            background: #e8e925;
+            border-radius: 50px;
+        }
+        &-minimize{
+            width: 8px;
+            height: 8px;
+            background: #74c54f;
+            border-radius: 50px;
+        }
+        &-right{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &-dot{
+            width: 3px;
+            height: 3px;
+            background: #999;
+            border-radius: 50px;
+        }
+    }
+    &__body{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(auto, 400px));
+        justify-content: space-around;
+        &-left{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 50px;
+        }
+        &-right{
+            padding: 50px;
+        }
+        &-title{
+            width: 155px;
+            font-size: 46px;
+            font-weight: 900;
+            color: #FF7B4E;
+            line-height: 50px;
+            text-transform: uppercase;
+        }
+        &-line{
+            display: block;
+            margin-top: 5px;
+            width: 45px;
+            height: 6px;
+            background: #FF7B4E;
+        }
+        &-subtitle{
+            font-size: 14px;
+            color: #888;
+        }
+        &-form{
+            display: flex;
+            flex-direction: column;
+            &_data, &_text{
+                padding-top: 15px;
+                background: #323A3D;
+                border: none;
+                border-bottom: 1px solid #fff;
+                text-transform: uppercase;
+                height: 40px;
+                font-size: 10px;
+                color: #fff;
+            }
+            &_text{
+                padding-top: 88px;
+                height: 110px;
+            }
+            &_btn{
+                margin-top: 15px;
+                margin-left: 172px;
+                cursor: pointer;
+                width: 128px;
+                height: 50px;
+                border-radius: 100px;
+                border: none;
+                color: #FFF;
+                background: linear-gradient(130deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFF;
+            }
+        }
+    }
+}

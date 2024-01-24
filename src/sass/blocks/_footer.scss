@@ -1,0 +1,42 @@
+.footer{
+    padding: 20px 60px;
+    background-color: #323A3D;
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list{
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+    }
+    &__link{
+        padding-left: 25px;
+        padding-right: 25px;
+        margin: 0;
+    }
+    &__login{
+        display: flex;
+        align-items: center;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+    &__label{
+        text-transform: uppercase;
+    }
+    &__signup{
+        padding-right: 20px;
+    }
+    &__button{
+        cursor: pointer;
+        width: 100px;
+        height: 35px;
+        border-radius: 100px;
+        border: none;
+        color: #FFF;
+        background: linear-gradient(130deg, #FF7B4E 57%, #FF584E 95.03%), #FFF;
+    }
+} 

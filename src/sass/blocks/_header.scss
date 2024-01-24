@@ -1,0 +1,109 @@
+.header {
+    position: relative;
+    &__layers {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: minmax(500px, auto);
+        grid-template-rows: 70px 500px;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+    }
+    &__menu{
+        padding-top: 15px;
+        z-index: 80;
+        display: grid;   
+        grid-template-columns: 150px 600px 210px;
+        column-gap: 100px;
+        align-items: center;
+    }
+    &__overlay{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+    &__close{
+        display: none;
+    }
+    &__signup{
+        border: none;
+        background: none;
+        color: #FFF;
+        cursor: pointer;
+    }
+    &__link, &__signup {
+     transition: 0.5s all;
+     &:hover{
+        text-shadow: 0 0 15px #FF7B4E;
+            &:before,  &:after{
+                content: '';
+                display: block;
+                height: 1px;
+                background-color: #fff;        
+            }
+        }
+    }
+    &__label{
+        text-transform: uppercase;
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    a{
+        text-decoration: none;
+        color: #FFF;
+        cursor: pointer;
+    }
+    &__login{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #FFF;
+    }
+    &__button{
+        cursor: pointer;
+        width: 128px;
+        height: 50px;
+        border-radius: 100px;
+        border: none;
+        color: #FFF;
+        background: linear-gradient(130deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFF;
+    }
+    &__text {
+        padding-top: 200px;
+        z-index: 1;
+        transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+        color: #ffffff;
+        font-weight: 900;
+        text-shadow: 0 0 15px #FF7B4E;
+    }
+    &__caption{
+        font-size: 35px;
+    }
+    &__title{
+        font-size: 45px;
+    }
+    &__layer {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-size: cover;
+            background-position: center;
+            will-change: transform;
+            z-index: 2;
+            &-base {
+                transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+                z-index: 0;
+            } 
+            &-middle {
+                transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+            }
+            &front {
+                transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
+            }
+        }
+    }
+
