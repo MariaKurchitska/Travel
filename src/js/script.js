@@ -7,7 +7,7 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 1.6,
         slidesToScroll: 1,
-        prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg" alt="arrow"></button>',
         nextArrow: false,
         autoplay: true,
         autoplaySpeed: 1800,
