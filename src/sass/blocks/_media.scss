@@ -27,12 +27,6 @@
     .explore .slick-prev {
         left: -35px;
     }
-    .reviews{
-        &__column{
-            grid-template-columns: 500px;
-            row-gap: 30px;
-        }
-    }
 }
 
 @media (max-width: 992px) {
@@ -81,6 +75,12 @@
     .slick-slider{
         margin-top: 50px;
 
+    }
+    .reviews{
+        &__column{
+            grid-template-columns: 500px;
+            row-gap: 30px;
+        }
     }
 }
 
